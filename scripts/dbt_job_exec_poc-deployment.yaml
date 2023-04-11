@@ -1,0 +1,50 @@
+###
+### A complete description of a Prefect Deployment for flow 'dbt_job_exec_poc'
+###
+name: d_dbt_job_exec_poc
+description: null
+version: e1692b61f49b69758b98dec2a6ce82ec
+# The work queue that will handle this deployment's runs
+work_queue_name: default
+work_pool_name: null
+tags: []
+parameters: {}
+schedule: null
+is_schedule_active: null
+infra_overrides: {}
+infrastructure:
+  type: process
+  env: {}
+  labels: {}
+  name: null
+  command: null
+  stream_output: true
+  working_dir: null
+  block_type_slug: process
+  _block_type_slug: process
+
+###
+### DO NOT EDIT BELOW THIS LINE
+###
+flow_name: dbt_job_exec_poc
+manifest_path: null
+storage: null
+path: c:\Users\pnandhak\OneDrive - Ciena Corporation\Documents\GitHub\prefect-dbt\scripts
+entrypoint: dbt_job_exec_poc.py:dbt_job_exec_poc
+parameter_openapi_schema:
+  title: Parameters
+  type: object
+  properties:
+    p_job_id_1:
+      title: p_job_id_1
+      position: 0
+      type: integer
+    p_job_id_2:
+      title: p_job_id_2
+      position: 1
+      type: integer
+  required:
+  - p_job_id_1
+  - p_job_id_2
+  definitions: null
+timestamp: '2023-04-11T04:41:15.134658+00:00'
